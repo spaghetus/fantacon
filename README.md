@@ -12,3 +12,13 @@ Every script in the `routines` directory will run every frame. The following con
 * `UP`, `DOWN`, `LEFT`, `RIGHT`, `Z`, `X` - Reads user input.
 
 I don't particularly like Lua, so if I ever do anything with this I'm going to port it to a more normal language.
+
+The following draw instructions are available:
+
+* `home` - Resets everything.
+* `move <X> <Y>` - Moves in relative coordinates
+* `scale <X> <Y>` - Scales the coordinate system
+* `rotate <A>` - Rotates the coordinate system in degrees
+* `color <R> <G> <B>` - Sets the color, 0-255
+* `power <O>` - Sets the opacity, 0-255
+* `toggle <B>` - Toggles drawing. true/false
