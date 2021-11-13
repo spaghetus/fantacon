@@ -27,10 +27,13 @@ DRAW["rect"][6] = "color ".. math.floor(100 * math.sin(TIMER) + 128) .. " " .. m
 
 if UP then
   WORK["y"] = WORK["y"] - 1
-elseif DOWN then
+end
+if DOWN then
   WORK["y"] = WORK["y"] + 1
-elseif LEFT then
+end
+if LEFT then
   WORK["x"] = WORK["x"] - 1
-elseif RIGHT then
+end
+if RIGHT then
   WORK["x"] = WORK["x"] + 1
 end

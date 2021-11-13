@@ -11,7 +11,7 @@ mod draw;
 const LUA_PRELUDE: &str = include_str!("prelude.lua");
 const ROUTINE_DIR: &str = "routines";
 
-#[macroquad::main("FantaCon")]
+#[macroquad::main("FantaScan")]
 async fn main() {
 	// Set up Lua
 	let lua = Lua::new();
