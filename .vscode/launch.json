@@ -1,0 +1,45 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug executable 'fantacon'",
+      "cargo": {
+        "args": [
+          "build",
+          "--bin=fantacon",
+          "--package=fantacon"
+        ],
+        "filter": {
+          "name": "fantacon",
+          "kind": "bin"
+        }
+      },
+      "args": [],
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug unit tests in executable 'fantacon'",
+      "cargo": {
+        "args": [
+          "test",
+          "--no-run",
+          "--bin=fantacon",
+          "--package=fantacon"
+        ],
+        "filter": {
+          "name": "fantacon",
+          "kind": "bin"
+        }
+      },
+      "args": [],
+      "cwd": "${workspaceFolder}"
+    }
+  ]
+}
